@@ -37,6 +37,7 @@
 
 html,
 body {
+    position : relative;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -44,6 +45,10 @@ body {
     background-color: rgb(39, 37, 37);
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 /*Responsive Navbar without js here*/
 
@@ -215,7 +220,7 @@ nav {
     margin: 0;
     height: 100%;
     width: 100%;
-    background: url(images/contact.jpg);
+    background: url(images/nn1.png);
     display: table;
     background-size: cover;
     background-attachment: fixed;
@@ -227,6 +232,16 @@ nav {
         width: 100%;
         max-width: none;
     }
+.profile-img {
+    width:50%;
+    height: 50%;
+    /* padding:3px; */
+    border:3px #eee;
+    border-style: solid ;
+    border-radius: 4%;
+
+
+}
 
 .content1 {
     max-width: 500px;
@@ -241,7 +256,7 @@ nav {
         opacity: 0; /*car delay, sinon commence à 1 */
         font-family: 'Raleway', sans-serif;
         color: whitesmoke;
-        text-shadow: 0px 0px 300px #000;
+        /* text-shadow: 0px 0px 300px #000; */
         font-size: 500%;
         padding-bottom: 10%;
     }
@@ -263,9 +278,11 @@ nav {
 
 /*Second page here*/
 .secondp {
+    margin : 0;
     height: 100%; 
-    min-width: 100%;
-    background: url(images/server2.jpg);
+    width: 100%;
+    background: url(images/cc1.jpg);
+    display: table;
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%);
@@ -307,13 +324,25 @@ nav {
         padding: 5px;
     }
 
-
+.thirthp {
+        height: 100%; 
+        min-width: 100%;
+        
+        background-size: cover;
+        background-attachment: fixed;
+        /* clip-path: polygon(0 0, 90% 0%, 100% 90%, 0% 100%); */
+        font-family: Oswald;
+        color: white;
+    }
 
     
-/*footer in a flex box */
+/*footer in a flex box, fixed + bottom */
 footer {
     display: flex;
     flex-wrap: wrap;
+    /* z-index: -1; */
+    position : fixed; 
+    bottom: 0;
     /* min-height: 35vh; */
     max-height: 100%;
     width: 100%;
@@ -324,6 +353,7 @@ footer {
 
     footer ul,
     li {
+        
         list-style-type: none;
         
     }
@@ -336,6 +366,7 @@ footer {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+
     flex-grow: 1;
     height: 100%;
     width: 100%;
@@ -343,10 +374,11 @@ footer {
     padding: 0% 0%;
     background-color: rgb(39, 37, 37);
 }
-
 .flex-child-ft1 {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: space-between;
+    /* justify-items: start; */
     font-family: Oswald, sans-serif;
     font-size: 90%;
     padding-top: 3%;
@@ -356,7 +388,24 @@ footer {
     width: 25%;
     color: #ffffff;
 }
+
+.flex-child-ft1-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-items: start; */
+    font-family: Oswald, sans-serif;
+    font-size: 90%;
+    padding-top: 3%;
+
+    
+    min-width: 200px;
+    width: 25%;
+    color: #ffffff;
+}
+
     .logo2 {
+        
         height: 150px;
         margin : auto;
         padding : 2;
@@ -368,21 +417,15 @@ footer {
         padding: 2%;
 
     }
+    .paraphLines {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        justify-content: first baseline;
+        
+      
+    }
 
-    /* .flex-child-ft1 img {
-        max-width: 25%; 
-        height: auto;
-        padding: 2%;
-    } */
-
-/* .flex-child-ft1 {
-    font-family: Oswald, sans-serif;
-    font-size: 90%;
-    padding-top: 3%;
-    margin: 0 0px;
-    width: 25%;
-    color: #ffffff;
-} */
 
 .flex-parent-ftsec {
     /* flex-wrap: wrap; */

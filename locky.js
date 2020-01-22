@@ -5,11 +5,11 @@ document.getElementById('projet1').addEventListener('mouseover',function(){
         
      }
     );
-document.getElementById('projet1').addEventListener('click',function(){
-//    alert("hello!")
-window.open(URL1, '_blank');
- }
-);
+// document.getElementById('projet1').addEventListener('click',function(){
+// //    alert("hello!")
+// window.open(URL1, '_blank');
+//  }
+// );
 
 // document.querySelector('.content2').addEventListener('click',function(){
 //     console.log("hello!")

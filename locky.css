@@ -409,7 +409,7 @@ nav {
 .secondp {
     /* display: flex; */
     margin : 0;
-    height: 100%; 
+    height: 120vh; 
     width: 100%;
     background: url(images/office.jpg);
     
@@ -438,7 +438,7 @@ nav {
         /* text-shadow: 0px 0px 300px #000; */
         font-size: 400%;
         /* padding-bottom: 10%; */
-        padding-top: 7vh;
+        padding-top: 10vh;
         padding-bottom: 3vh;
         margin: 5px;
        
@@ -458,7 +458,7 @@ nav {
     .principal2 {
         width: 100%;
         max-height: 100%;
-        padding: 0 10%;
+        padding: 5% 10%;
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
@@ -533,7 +533,7 @@ nav {
         
         width: 100%;
         max-height: 100%;
-        padding: 3vh 0;
+        padding: 6vh 0;
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
@@ -564,9 +564,11 @@ nav {
     .projets {
         overflow-y: scroll;
         justify-content: center;
+        
     }
     .projets > h2 {
-        align-content: flex-start;
+        align-self: stretch;
+        text-align: center;
         margin: 0;
         color: white;
         font-size: 120%;
@@ -643,7 +645,7 @@ nav {
      */
 
 .thirthp {
-        height: 100%; 
+        height: 100vh; 
         width: 100%;
         background: url(images/owl1.jpg);
         background-size: cover;
@@ -659,7 +661,7 @@ nav {
         /* text-shadow: 0px 0px 300px #000; */
         font-size: 400%;
         /* padding-bottom: 10%; */
-        padding-top: 8vh;
+        padding-top: 10vh;
         padding-bottom: 4vh;
         margin: 0;
         justify-content: center;
@@ -682,9 +684,7 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         overflow-y: scroll;
-        
-        
-        
+         
 
     }
     .principal3>div {
@@ -708,6 +708,7 @@ nav {
         background-color: thistle;
     }
 }    
+
 /*footer fixed + bottom */
 footer {
     display: flex;

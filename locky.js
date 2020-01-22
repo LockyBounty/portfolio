@@ -1,11 +1,11 @@
 const URL1 = "https://www.google.com/"
 
-// document.getElementById('test1').addEventListener('mouseover',function(){
-//         alert("hello!")
+document.getElementById('projet1').addEventListener('mouseover',function(){
+        console.log("hello!")
         
-//      }
-//     );
-document.getElementById('test1').addEventListener('click',function(){
+     }
+    );
+document.getElementById('projet1').addEventListener('click',function(){
 //    alert("hello!")
 window.open(URL1, '_blank');
  }

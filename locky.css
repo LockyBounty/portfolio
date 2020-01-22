@@ -469,7 +469,7 @@ nav {
        justify-content: space-evenly;
     }
     .principal2 div {
-       width: 370px;
+       width: 350px;
        height: 250px;
        
        margin: 20px;
@@ -504,7 +504,7 @@ nav {
         align-content: flex-start;
         margin: 1.5vh;
         color: white;
-        text-shadow: 1px 2px 0px rgb(167, 46, 2);
+        text-shadow: 1px 2px 0px rgb(78, 43, 2);
 
       }
     .projets > p {
@@ -641,8 +641,8 @@ nav {
         text-align: center;
         margin: 0;
         color: white;
-        font-size: 120%;
-        text-shadow: 0px 2px 0px rgb(167, 46, 2);
+        font-size: 110%;
+        text-shadow: 1px 2px 0px rgb(78, 43, 2);
         
       }
     .projets > p {
@@ -757,7 +757,7 @@ nav {
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
          
 
     }

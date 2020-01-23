@@ -256,7 +256,7 @@ nav {
         max-width: none;
     }
 .profile-img {
-    
+    filter: brightness(150%);
     height: 100%;
     width:auto;
     /* padding:3px; */
@@ -280,7 +280,7 @@ nav {
 }
 
     .content1 h1 {
-        animation: yourAnimation 3s none 1s linear;;
+        animation: yourAnimation 2s none 1s linear;;
         /* animation: yourAnimation2 5s none 1s linear; */
         animation-iteration-count: 1;
         animation-fill-mode: forwards; /*Permet de s'arrêter à la dernière key de l'animation */
@@ -324,7 +324,7 @@ nav {
         margin: 2% 0;
         font-size: 120%;
         color: yellow;
-        background-color: rgba(3, 3, 3, 0.822); 
+        background-color: rgba(190, 7, 7, 0.795); 
         clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     }
     
@@ -471,22 +471,22 @@ nav {
     }
     .principal2 div {
        width: 350px;
-       height: 250px;
+       height: 230px;
        
        margin: 20px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border:4px solid beige;
+        border:4px solid rgb(214, 112, 39);
         
     }
     .principal2>div:hover {
         
-        box-shadow: inset 0 0 0 1000px rgba(10, 10, 10, 0.658);
+        box-shadow: inset 0 0 0 1000px rgba(10, 10, 10, 0.558);
         transition: all ease .5s;
         /* opacity:0.9;  */
         cursor: pointer;
-        /* color: rgba(0, 0, 0, 0.5); */
+        /* color: rgba(0, 0, 0, 0.4); */
 
     }
 
@@ -525,7 +525,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/Laby.png);
     background-size: cover;
@@ -536,7 +536,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/iphone-dark-notebook-pen-34140.jpg);
     background-size: cover;
@@ -547,7 +547,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/delen_privatebankJPG.jpg);
     background-size: cover;
@@ -559,7 +559,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/rpglocky1.jpg);
     background-size: cover;
@@ -570,7 +570,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/chibidefaultimage.jpg);
     background-size: cover;
@@ -581,7 +581,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/chibidefaultimage.jpg);
     background-size: cover;
@@ -592,7 +592,7 @@ nav {
      linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.7)
     ),
     url(images/projects/chibidefaultimage.jpg);
     background-size: cover;
@@ -600,8 +600,6 @@ nav {
 
 @media screen and (max-width: 799px) {
     .principal2 {
-
-        
         width: 100%;
         max-height: 100%;
         padding: 6vh 0;
@@ -613,12 +611,13 @@ nav {
     }
     .principal2 div {
         width: 170px;
-        height: 130px;
+        height: 110px;
         margin: 3px;
          display: flex;
          flex-wrap: wrap;
          flex-direction: row;
-         border:3px solid beige;
+         border:3px solid rgb(214, 112, 39);
+         font-size: 92%;
      }
      .principal2 img {
         border-radius: 5px;
@@ -631,6 +630,7 @@ nav {
         text-align: justify;
         align-content: center;
         padding: 5px;
+        
     }
     .projets {
         overflow-y: scroll;
@@ -785,6 +785,7 @@ nav {
 }    
 
 /*footer fixed + bottom */
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -813,7 +814,7 @@ footer {
 .flex-parent-ft {
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
     flex-grow: 1;
     height: 100%;
@@ -833,7 +834,7 @@ footer {
     padding-top: 3%;
 
     
-    min-width: 300px;
+    min-width: 200px;
     width: 25%;
     color: #ffffff;
 }
@@ -872,7 +873,7 @@ footer {
         flex-direction: column;
         justify-items: flex-start;
         justify-content: first baseline;
-        padding-left: 11vw;
+        /* padding-left: 11vw; */
         
       
     }

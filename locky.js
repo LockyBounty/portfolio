@@ -1,5 +1,25 @@
 const URL1 = "https://www.google.com/"
 
+let menu = document.querySelector('.nav-toggle');
+
+document.querySelector('#nav-check1').addEventListener('click',function(){
+   menu.checked = false
+});
+document.querySelector('#nav-check2').addEventListener('click',function(){
+   menu.checked = false
+});
+document.querySelector('#nav-check3').addEventListener('click',function(){
+   menu.checked = false
+});
+document.querySelector('#nav-check4').addEventListener('click',function(){
+   menu.checked = false
+});
+
+
+
+
+
+
 document.getElementById('projet1').addEventListener('mouseover',function(){
         console.log("hello!")
         

@@ -10,7 +10,7 @@
 
 .modal-main {
     display: flex;
-    
+    position: fixed;
     flex-direction: column;
     width: 90vw;
     max-width: 900px;
@@ -18,7 +18,7 @@
 
     border-radius: 5px;
     background-color: whitesmoke;
-    
+    overflow-y: scroll;
 }
 
 .modal-title {
@@ -33,7 +33,7 @@
     text-align: center;
     /* text-transform: uppercase; */
     font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-size: 180%;
 
 }
 hr {
@@ -179,6 +179,8 @@ hr {
     height: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
     /* padding: 2%; */
     
 }

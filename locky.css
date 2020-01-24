@@ -259,7 +259,7 @@ nav {
     filter: brightness(150%);
     height: 100%;
     width:auto;
-    /* padding:3px; */
+    /* margin:0 3% 0 3%; */
     border:3px #eee;
     border-style: solid ;
     border-radius: 4%;
@@ -271,6 +271,8 @@ nav {
     height: 500px;
     display: flex;
     margin-bottom: 2vh;
+    /* padding:0 3% 0 3%; */
+    justify-content: center;
 }
 
 .content1 {
@@ -299,7 +301,7 @@ nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         overflow-x: hidden;
         padding-top: 20px;
 

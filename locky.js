@@ -1,4 +1,4 @@
-const URL1 = "https://www.google.com/"
+const URL1 = "projet1.html"
 
 let menu = document.querySelector('.nav-toggle');
 
@@ -25,11 +25,12 @@ document.getElementById('projet1').addEventListener('mouseover',function(){
         
      }
     );
-// document.getElementById('projet1').addEventListener('click',function(){
-// //    alert("hello!")
+document.getElementById('projet1').addEventListener('click',function(){
+//    alert("hello!")
 // window.open(URL1, '_blank');
-//  }
-// );
+window.open(URL1, '_self');
+ }
+);
 
 // document.querySelector('.content2').addEventListener('click',function(){
 //     console.log("hello!")
@@ -41,14 +42,21 @@ document.getElementById('projet1').addEventListener('mouseover',function(){
  }
  );
 
-//  $( '.modal' ).addClass( 'open' );
 
-//  if ( $( '.modal' ).hasClass( 'open' ) ) {
-//    $( '.container' ).addClass( 'blur' );
-//  } 
 
-//  $( '.close' ).click(function() {
-//     $( '.modal' ).removeClass( 'open' );
-//     $( '.cont' ).removeClass( 'blur' );
-//   });
+
+
+// $('#manual-ajax').click(function(event) {
+//    event.preventDefault();
+//    this.blur(); // Manually remove focus from clicked link.
+//    $.get(this.href, function(html) {
+//      $(html).appendTo('body').modal();
+//    });
+//  });
+
+//  $("#manual-ajax").modal({
+//    escapeClose: false,
+//    clickClose: false,
+//    showClose: false
+//  });
 

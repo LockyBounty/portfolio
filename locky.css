@@ -475,7 +475,9 @@ nav {
 
        width: 30vw;
        max-width:350px;
-       height: 210px;
+       height: 30vh;
+       min-height: 150px;
+       
        
        margin: 20px;
         display: flex;
@@ -576,7 +578,7 @@ nav {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.7)
     ),
-    url(images/projects/chibidefaultimage.jpg);
+    url(images/projects/ikuM2.jpg);
     background-size: cover;
 }
 #projet6 {
@@ -587,7 +589,7 @@ nav {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.7)
     ),
-    url(images/projects/chibidefaultimage.jpg);
+    url(images/projects/group-of-people-doing-cheers-544961.jpg);
     background-size: cover;
 }
 #projet7 {

@@ -10,10 +10,10 @@
 
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     
-  
     <link href="locky.css" rel="stylesheet">
-    <link href="modal.css" rel="stylesheet">
+    <!-- <link href="modal.css" rel="stylesheet"> -->
     <link rel='shortcut icon' href='images/LOKI-Logo(black).ico' type='image/x-icon' / >
     <title>Locky's Portfolio</title>
 </head>
@@ -86,12 +86,13 @@
 
             <div class="content2">
                 <H1>Projects</H1>
-                <h2>Professional and personal projects that I realized will be shown below...</h2>
+                <h2>Professional and personal projects that I realized will be shown below...</h2 id="p0" class='modal'>
                 <div class="principal2">
-
+                    
                     <div class="projets" id="projet1">   
-                        <h2>Labyrinth Game</h2>  
-                        <p>Godot | GDScript | Gimp </p>                  
+                        <h2>Labyrinth Game</h2> 
+                        <p>Godot | GDScript | Gimp </p>   
+                                     
                     </div>
                     <div class="projets" id="projet2">
                         <h2>Event App Prototype</h2>  
@@ -215,6 +216,7 @@
     </footer>
     
     <script src="locky.js"></script>
+    <script src="modal.js"></script>
 </body>
 
 

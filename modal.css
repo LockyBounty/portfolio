@@ -1,10 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: Distant2;
+  src: url("fonts/Distant2.ttf") format("truetype");
+}
 
 
+html {
+    width: 100%;
+    height: 100vh;
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+
+}
 .modal-body {
+    
     display: flex;
     justify-content: center;
-    margin: 5vh 2vw;
+    margin: 0vh 2vw; /*to do if modal*/
+
     
 } 
 
@@ -14,11 +29,13 @@
     flex-direction: column;
     width: 90vw;
     max-width: 900px;
-    height: 100%;
+    height: 98vh;
 
-    border-radius: 5px;
+    /* border-radius: 7px; */
     background-color: whitesmoke;
     overflow-y: scroll;
+  
+
 }
 
 .modal-title {
@@ -28,11 +45,11 @@
     
 }
 .modal-title>h1 {
-    color: rgb(218, 68, 81);
+    color: rgb(252, 71, 0);
     justify-content: center;
     text-align: center;
     /* text-transform: uppercase; */
-    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Distant2','Helvetica Neue', sans-serif;
     font-size: 180%;
 
 }
@@ -80,12 +97,27 @@ hr {
     width: 100%;
     justify-content: center;
     align-items: center;
+    
 }
-.modal-images>img{
+.modal-images img{
     margin-bottom: 2vh;
-    border: 3px solid dodgerblue;
-    width: 70%;
+
+    /* border: 3px solid dodgerblue; */
+    width: 30vw;
+    max-width: 100%;
+    
+    cursor: pointer;
 }
+.myImg {
+  border: 3px solid transparent;
+  display: flex;
+  width: 35vh;
+  max-width: 100%;
+}
+.myImg:hover {
+  border: 3px solid dodgerblue;
+}
+
 .modal-close-up {
     display: flex;
     width: 60px;
@@ -109,13 +141,14 @@ hr {
   cursor: pointer;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
+  font-weight: bolder;
 
 
 }
 .modal-close-up-inner:before, .modal-close-up-inner:after {
     position: absolute;
     content: '';
-    height: 1px;
+    height: 2px;
     width: inherit;
     background: orangered;
     left: 0;
@@ -180,7 +213,7 @@ hr {
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
-    margin-bottom: 15vh;
+    margin-bottom: 13vh;
     /* padding: 2%; */
     
 }
@@ -249,4 +282,85 @@ hr {
     }
   } */
 
- 
+ /*---------------------------MODAL IMAGES-----------------------*/
+
+
+
+
+.modal {
+  z-index:1;
+  display:none;
+  padding-top:10px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,0.8);
+  justify-content: center;
+  }
+  
+  .modal-content.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  
+  .modal-hover-opacity {
+  opacity:1;
+  filter:alpha(opacity=100);
+  
+  }
+  
+  .modal-hover-opacity:hover {
+  opacity:0.60;
+  filter:alpha(opacity=60);
+  
+  }
+  
+  
+  .close {
+  text-decoration:none;float:right;font-size:24px;font-weight:bold;color:white;
+  position: fixed;
+  }
+  .modal-images {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  }
+  #img01 {
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .modal-content, #caption {   
+    
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+  }
+/* Add Animation - Zoom in the Modal */
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

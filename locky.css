@@ -889,8 +889,11 @@ footer {
         justify-items: flex-start;
         justify-content: first baseline;
         /* padding-left: 11vw; */
-        
-      
+    }
+    .com1 {
+        display: flex;
+        align-items: center;
+        /* margin-left: -2vh; */
     }
 
 

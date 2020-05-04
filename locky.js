@@ -57,6 +57,9 @@ document.getElementById("projet6").addEventListener("click", function() {
 document.getElementById("projet7").addEventListener("click", function() {
   window.open(URL7, "_self");
 });
+document.getElementById("projet8").addEventListener("click", function() {
+  window.open(URL8, "_self");
+});
 
 
 // document.querySelector('.content2').addEventListener('click',function(){

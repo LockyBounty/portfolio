@@ -1,4 +1,4 @@
- var url0 = 'index.html';
+ var url0 = '../index.html';
 
 
  document.querySelector(".modal-close-button2").addEventListener('click',function(){

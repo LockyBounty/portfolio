@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="modal.css" rel="stylesheet">
+    <title>Projet7</title>
+</head>
+
+<body class="modal-body">
+    <section class="modal-main">
+        <div class="modal-close-up">
+            <div class="modal-close-up-inner">
+              <label class="modal-close-button1">Back</label>
+            </div>
+        </div>
+        <div class="modal-title">
+            <h1>Webshop</h1>
+        </div>
+        <hr>
+        <div class="modal-description">
+            <p>
+                This is a personnal project that I decided to do
+                on Ecwid (aka Free Shopify) 
+                <br>
+                I was stunned how blazing fast we can create our own shop nowadays, we just need few hours to make one...
+                <br>
+                I really enjoyed to make this Webshop !
+            </p>
+            <p>
+            
+                <img src="../images/projects/awooRight.gif" height="100" width="100">
+                <br>
+                <a href="https://lock-e-style.company.site/"  
+            target="_blank">Click here to have a look</a>
+            </p>
+            <p>
+                This webshop has been created with Ecwid.
+                
+            </p>           
+            <p class="modal-description-fat">
+                <strong>Ecwid | Photoshop   </strong>   
+                <br>
+                <strong>November 2020   </strong>     
+            </p>
+            
+        </div>
+        <div class="modal-images">
+            
+            <img class="myImg" 
+            src="../images/projects/webshopEcwid1.png"  
+            border-style='none' alt="" 
+            onclick="onClick(this)"
+            class="modal-hover-opacity">
+            <img class="myImg" 
+            src="../images/projects/webshopEcwid2.png"  
+            onclick="onClick(this)"
+            border-style='none' alt="" 
+            class="modal-hover-opacity">
+            <img class="myImg" 
+            src="../images/projects/webshopEcwid3.png"  
+            border-style='none' alt="" 
+            onclick="onClick(this)"
+            class="modal-hover-opacity">
+            
+        </div>
+        
+        <div class="modal-close-bottom">
+            <button class="modal-close-button2">Go Back </button>
+            
+        </div>
+
+    </section>
+    <section class="modal-second">
+        
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+              <img id="img01" >
+            </div>
+          </div>
+        
+    </section>
+    
+    <script src="modal.js"></script>
+</body>
+
+</html>
